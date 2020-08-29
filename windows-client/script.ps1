@@ -57,4 +57,3 @@ function Set-LabBookmark ($labsURL) {
 #Disable-NetworkDiscovery
 Get-BookMarks
 Set-LabBookmark $labsURL
-
