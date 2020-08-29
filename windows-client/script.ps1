@@ -40,7 +40,7 @@ function Add-ArtUser {
 }
 
 function Get-BookMarks {
-    Invoke-WebRequest "https://raw.githubusercontent.com/art-labs/deployment/master/Bookmarks" -OutFile "C:\Users\art\AppData\Local\Google\Chrome\User Data\Default\Bookmarks"
+    Invoke-WebRequest "https://raw.githubusercontent.com/clr2of8/dc8-deployment-PUBLIC/master/Bookmarks" -OutFile "C:\Users\art\AppData\Local\Google\Chrome\User Data\Default\Bookmarks"
 }
 
 function Set-LabBookmark ($labsURL) {
