@@ -43,11 +43,16 @@ function Get-BookMarks {
     Invoke-WebRequest "https://raw.githubusercontent.com/clr2of8/dc8-deployment-PUBLIC/master/Bookmarks" -OutFile "C:\Users\art\AppData\Local\Google\Chrome\User Data\Default\Bookmarks"
 }
 
-function Set-LabBookmark ($labsURL) {
-    (Get-Content -raw "C:\Users\art\AppData\Local\Google\Chrome\User Data\Default\Bookmarks") | ForEach-Object {
-        $_ -replace 'http://labs-url/', $labsURL |
-        Add-Member NoteProperty PSPath $_.PSPath -PassThru
-    } | Set-Content -nonewline
+function Set-LabBookmark {
+    $bookmarksFile = "C:\Users\art\AppData\Local\Google\Chrome\User Data\Default\Bookmarks"
+    $jsondata = Get-Content -Raw -Path $bookmarksFile | ConvertFrom-Json
+    foreach ($child in $jsondata.roots.bookmark_bar.children )
+    {
+        if ($child.name -eq "Labs"){
+            $child.url = $labsURL
+        }
+    } 
+    $jsondata | ConvertTo-Json -Depth 100 | Set-Content $bookmarksFile
 }
 
 # Disable-OOBE
