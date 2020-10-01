@@ -115,15 +115,23 @@
                "date_added": "13243046588104900",
                "guid": "3f4c5238-96e6-42b4-8009-1c204fbc285b",
                "id": "21",
-               "name": "Caldera Server",
+               "name": "CALDERA Server",
                "type": "url",
                "url": "http://localhost:8888/"
+            }, {
+            "children": [ {
+               "date_added": "13243046588104900",
+               "guid": "2f4c5238-96e6-42b4-8009-1c204fbc285b",
+               "id": "21",
+               "name": "CALDERA Documentation",
+               "type": "url",
+               "url": "https://caldera.readthedocs.io/en/latest/"
             } ],
             "date_added": "13243046654178236",
             "date_modified": "13243046654178476",
             "guid": "bb878d57-7053-478b-86be-66eadceef1da",
             "id": "22",
-            "name": "Caldera",
+            "name": "CALDERA",
             "type": "folder"
          } ],
          "date_added": "13242893379423635",
