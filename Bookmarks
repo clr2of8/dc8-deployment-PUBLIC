@@ -1,5 +1,5 @@
 {
-   "checksum": "a9b9805c4d6f26728b1bf4750573a193",
+   "checksum": "68149569ed82f93b6dd230638dd231d2",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -8,7 +8,7 @@
             "id": "2",
             "name": "Labs",
             "type": "url",
-            "url": "http://labs-url/"
+            "url": "https://docs.google.com/document/d/12WOkaYLFgOcf1k8rUTIBW-ZJ-PL0oMzfqWFvuq9Lj5A/edit?usp=sharing"
          }, {
             "children": [ {
                "date_added": "0",
@@ -102,7 +102,7 @@
                "id": "16",
                "name": "SCYTHE Server",
                "type": "url",
-               "url": "https://scythe-ip:8834/"
+               "url": "https://scythe-ip:8443/"
             } ],
             "date_added": "13243046515353874",
             "date_modified": "13243046588104900",
@@ -117,17 +117,24 @@
                "id": "18",
                "name": "CALDERA Server",
                "type": "url",
-               "url": "http://localhost:8888/"
+               "url": "http://40.121.16.46:8888/"
             }, {
                "date_added": "13246048193903489",
                "guid": "8956a597-2cea-4112-aca0-d43ff55f07fd",
-               "id": "22",
+               "id": "19",
                "name": "CALDERA Documentation",
                "type": "url",
                "url": "https://caldera.readthedocs.io/en/latest/"
+            }, {
+               "date_added": "13246084120371359",
+               "guid": "82fff951-20a2-481b-b73d-690d5a6e9932",
+               "id": "23",
+               "name": "CALDERA GitHub",
+               "type": "url",
+               "url": "https://github.com/mitre/caldera"
             } ],
             "date_added": "13243046654178236",
-            "date_modified": "13246048193903489",
+            "date_modified": "13246084120371359",
             "guid": "bb878d57-7053-478b-86be-66eadceef1da",
             "id": "17",
             "name": "CALDERA",
@@ -145,7 +152,7 @@
          "date_added": "13242893379423638",
          "date_modified": "0",
          "guid": "00000000-0000-4000-a000-000000000003",
-         "id": "19",
+         "id": "20",
          "name": "Other bookmarks",
          "type": "folder"
       },
@@ -154,7 +161,7 @@
          "date_added": "13242893379423639",
          "date_modified": "0",
          "guid": "00000000-0000-4000-a000-000000000004",
-         "id": "20",
+         "id": "21",
          "name": "Mobile bookmarks",
          "type": "folder"
       }
