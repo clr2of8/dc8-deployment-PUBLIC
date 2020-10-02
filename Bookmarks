@@ -8,7 +8,7 @@
             "id": "2",
             "name": "Labs",
             "type": "url",
-            "url": "https://docs.google.com/document/d/12WOkaYLFgOcf1k8rUTIBW-ZJ-PL0oMzfqWFvuq9Lj5A/edit?usp=sharing"
+            "url": "https://labs-url"
          }, {
             "children": [ {
                "date_added": "0",
@@ -117,7 +117,7 @@
                "id": "18",
                "name": "CALDERA Server",
                "type": "url",
-               "url": "http://40.121.16.46:8888/"
+               "url": "http://localhost:8888/"
             }, {
                "date_added": "13246048193903489",
                "guid": "8956a597-2cea-4112-aca0-d43ff55f07fd",
