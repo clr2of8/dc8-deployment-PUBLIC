@@ -1,5 +1,5 @@
 {
-   "checksum": "68149569ed82f93b6dd230638dd231d2",
+   "checksum": "fa6850cdf41ac8b5dfae50d0dfb784e1",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -61,7 +61,7 @@
                "url": "https://github.com/redcanaryco/atomic-red-team/tree/master/atomics/Indexes/Attack-Navigator-Layers"
             } ],
             "date_added": "13242893495310769",
-            "date_modified": "0",
+            "date_modified": "13246824119631808",
             "guid": "c4143e9a-b18b-4299-b178-88c142477992",
             "id": "3",
             "name": "ART",
@@ -87,10 +87,17 @@
                "id": "14",
                "name": "ATT&CK® Navigator Github",
                "type": "url",
-               "url": "https://github.com/mitre/attack-navigator"
+               "url": "https://github.com/mitre-attack/attack-navigator"
+            }, {
+               "date_added": "13246824165874150",
+               "guid": "d8ef7e18-9994-4336-a002-63626933c35b",
+               "id": "25",
+               "name": "Enterprise Techniques",
+               "type": "url",
+               "url": "https://attack.mitre.org/techniques/enterprise/"
             } ],
             "date_added": "13242893495312211",
-            "date_modified": "0",
+            "date_modified": "13246824165874150",
             "guid": "a7728c8b-30b4-4a7c-967a-0a18cf16de95",
             "id": "11",
             "name": "Mitre ATT&CK",
@@ -128,13 +135,13 @@
             }, {
                "date_added": "13246084120371359",
                "guid": "82fff951-20a2-481b-b73d-690d5a6e9932",
-               "id": "23",
+               "id": "20",
                "name": "CALDERA GitHub",
                "type": "url",
                "url": "https://github.com/mitre/caldera"
             } ],
             "date_added": "13243046654178236",
-            "date_modified": "13246084120371359",
+            "date_modified": "13246824079680187",
             "guid": "bb878d57-7053-478b-86be-66eadceef1da",
             "id": "17",
             "name": "CALDERA",
@@ -152,7 +159,7 @@
          "date_added": "13242893379423638",
          "date_modified": "0",
          "guid": "00000000-0000-4000-a000-000000000003",
-         "id": "20",
+         "id": "21",
          "name": "Other bookmarks",
          "type": "folder"
       },
@@ -161,7 +168,7 @@
          "date_added": "13242893379423639",
          "date_modified": "0",
          "guid": "00000000-0000-4000-a000-000000000004",
-         "id": "21",
+         "id": "22",
          "name": "Mobile bookmarks",
          "type": "folder"
       }
