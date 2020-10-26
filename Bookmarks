@@ -1,5 +1,5 @@
 {
-   "checksum": "fa6850cdf41ac8b5dfae50d0dfb784e1",
+   "checksum": "9661dbfae11bb9cdc144393ac5a41300",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -75,6 +75,13 @@
                "type": "url",
                "url": "https://attack.mitre.org/"
             }, {
+               "date_added": "13248221721023364",
+               "guid": "cd0a222d-ebe0-47d0-9acd-db7e55ec73a4",
+               "id": "25",
+               "name": "ATT&CK® Navigator",
+               "type": "url",
+               "url": "https://mitre-attack.github.io/attack-navigator/enterprise/"
+            }, {
                "date_added": "0",
                "guid": "9a6bed3e-1020-4de4-ba53-2c3795d1ee38",
                "id": "13",
@@ -85,19 +92,19 @@
                "date_added": "0",
                "guid": "670f9486-40fb-4e12-b9ec-79832c748d02",
                "id": "14",
-               "name": "ATT&CK® Navigator Github",
+               "name": "ATT&CK® Navigator GitHub",
                "type": "url",
                "url": "https://github.com/mitre-attack/attack-navigator"
             }, {
                "date_added": "13246824165874150",
                "guid": "d8ef7e18-9994-4336-a002-63626933c35b",
-               "id": "25",
+               "id": "15",
                "name": "Enterprise Techniques",
                "type": "url",
                "url": "https://attack.mitre.org/techniques/enterprise/"
             } ],
             "date_added": "13242893495312211",
-            "date_modified": "13246824165874150",
+            "date_modified": "13248221735152755",
             "guid": "a7728c8b-30b4-4a7c-967a-0a18cf16de95",
             "id": "11",
             "name": "Mitre ATT&CK",
@@ -106,36 +113,50 @@
             "children": [ {
                "date_added": "13243046455039978",
                "guid": "6dfe5a25-fd65-4815-934e-20e6fe86f5ee",
-               "id": "16",
+               "id": "17",
                "name": "SCYTHE Server",
                "type": "url",
                "url": "https://scythe-ip:8443/"
+            }, {
+               "date_added": "13248221900516883",
+               "guid": "1f414059-2d22-4d45-9d91-31e147b98d25",
+               "id": "29",
+               "name": "Community Threats",
+               "type": "url",
+               "url": "https://github.com/scythe-io/community-threats"
+            }, {
+               "date_added": "13248221931707226",
+               "guid": "36913ec1-adb1-4e84-995c-1d5b613196e2",
+               "id": "30",
+               "name": "Threat Thursday",
+               "type": "url",
+               "url": "https://www.scythe.io/threatthursday"
             } ],
             "date_added": "13243046515353874",
-            "date_modified": "13243046588104900",
+            "date_modified": "13248221931707226",
             "guid": "f5715cc7-69f9-4104-a4a3-74df5f1ecc15",
-            "id": "15",
+            "id": "16",
             "name": "SCYTHE",
             "type": "folder"
          }, {
             "children": [ {
                "date_added": "13243046588104900",
                "guid": "3f4c5238-96e6-42b4-8009-1c204fbc285b",
-               "id": "18",
+               "id": "19",
                "name": "CALDERA Server",
                "type": "url",
                "url": "http://localhost:8888/"
             }, {
                "date_added": "13246048193903489",
                "guid": "8956a597-2cea-4112-aca0-d43ff55f07fd",
-               "id": "19",
+               "id": "20",
                "name": "CALDERA Documentation",
                "type": "url",
                "url": "https://caldera.readthedocs.io/en/latest/"
             }, {
                "date_added": "13246084120371359",
                "guid": "82fff951-20a2-481b-b73d-690d5a6e9932",
-               "id": "20",
+               "id": "21",
                "name": "CALDERA GitHub",
                "type": "url",
                "url": "https://github.com/mitre/caldera"
@@ -143,12 +164,34 @@
             "date_added": "13243046654178236",
             "date_modified": "13246824079680187",
             "guid": "bb878d57-7053-478b-86be-66eadceef1da",
-            "id": "17",
+            "id": "18",
             "name": "CALDERA",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13248221774305521",
+               "guid": "6e22c42f-7f90-4f06-a6ad-c9e84796da78",
+               "id": "27",
+               "name": "PurpleSharp documentation",
+               "type": "url",
+               "url": "https://purplesharp.readthedocs.io/en/latest/home/purplesharp.html"
+            }, {
+               "date_added": "13248221813508314",
+               "guid": "48661641-d149-4ca7-beb0-d5c2e7f488cb",
+               "id": "28",
+               "name": "PurpleSharp GitHub",
+               "type": "url",
+               "url": "https://github.com/mvelazc0/PurpleSharp"
+            } ],
+            "date_added": "13248221751637604",
+            "date_modified": "13248221900516883",
+            "guid": "c374b9aa-78fd-4df1-8974-eade1011c918",
+            "id": "26",
+            "name": "PurpleSharp",
             "type": "folder"
          } ],
          "date_added": "13242893379423635",
-         "date_modified": "13243046455039978",
+         "date_modified": "13248221774305521",
          "guid": "00000000-0000-4000-a000-000000000002",
          "id": "1",
          "name": "Bookmarks bar",
@@ -159,7 +202,7 @@
          "date_added": "13242893379423638",
          "date_modified": "0",
          "guid": "00000000-0000-4000-a000-000000000003",
-         "id": "21",
+         "id": "22",
          "name": "Other bookmarks",
          "type": "folder"
       },
@@ -168,7 +211,7 @@
          "date_added": "13242893379423639",
          "date_modified": "0",
          "guid": "00000000-0000-4000-a000-000000000004",
-         "id": "22",
+         "id": "23",
          "name": "Mobile bookmarks",
          "type": "folder"
       }
