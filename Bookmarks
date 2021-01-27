@@ -26,13 +26,6 @@
                "url": "https://github.com/redcanaryco/atomic-red-team/tree/master/atomics"
             }, {
                "date_added": "0",
-               "guid": "21a1a365-fa82-4b45-9fb2-104d5c2521b2",
-               "id": "6",
-               "name": "Execution Frameworks",
-               "type": "url",
-               "url": "https://github.com/redcanaryco/atomic-red-team/tree/master/execution-frameworks"
-            }, {
-               "date_added": "0",
                "guid": "6c47529e-ba0b-4e3d-b959-0d8d29d102b6",
                "id": "7",
                "name": "Invoke-AtomicRedTeam",
