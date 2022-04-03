@@ -48,4 +48,4 @@ cronjob="@reboot $croncmd"
 # add art user to VECTR
 
 echo "****Done with OnDemand Caldera Linux VM Setup****"
-echo "****Restar this VM and log in as user:art password:AtomicRedTeam1!****"
+echo "****Restart this VM and log in as user:art password:AtomicRedTeam1!****"
