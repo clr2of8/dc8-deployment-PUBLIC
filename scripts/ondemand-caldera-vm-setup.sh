@@ -17,7 +17,8 @@ echo 'export PATH=$PATH:/usr/local/go/bin' >> /home/art/.profile
 
 echo "****Installing MITRE CALDERA v4.0.0-beta****"
 git clone https://github.com/mitre/caldera.git --recursive --branch 4.0.0-beta
-cd calderapip3 install -r requirements.txt
+cd caldera
+sudo pip3 install -r requirements.txt
 wget https://raw.githubusercontent.com/clr2of8/dc8-deployment-PUBLIC/master/caldera/local.yml -O /home/art/caldera/conf/local.yml
 # hacks for v4.0.0-beta training modules
 sed -i s/op.finish[[:space:]]and[[:space:]]//g /home/art/caldera/plugins/training/app/flags/operations/flag_*
