@@ -20,7 +20,7 @@ git clone https://github.com/mitre/caldera.git --recursive --branch 4.0.0-beta
 cd calderapip3 install -r requirements.txt
 wget https://raw.githubusercontent.com/clr2of8/dc8-deployment-PUBLIC/master/caldera/local.yml -O /home/art/caldera/conf/local.yml
 # hacks for v4.0.0-beta training modules
-sed -i s/op.finish[[:space:]]and[[:space:]]//g ~/caldera/plugins/training/app/flags/operations/flag_*
+sed -i s/op.finish[[:space:]]and[[:space:]]//g /home/art/caldera/plugins/training/app/flags/operations/flag_*
 sed -i s/[[:space:]]and[[:space:]]op.finish//g /home/art/caldera/plugins/training/app/flags/plugins/manx/flag_0.py
 sed -i s/op.finish[[:space:]]and[[:space:]]//g /home/art/caldera/plugins/training/app/flags/plugins/mock/flag_*
 
@@ -37,11 +37,14 @@ mkdir -p /opt/vectr
 cd /opt/vectr
 wget https://github.com/SecurityRiskAdvisors/VECTR/releases/download/ce-8.2.2/sra-vectr-runtime-8.2.2-ce.zip -P /opt/vectr
 unzip -o sra-vectr-runtime-8.2.2-ce.zip
-ip=$(ip route get 8.8.8.8 | awk -F"src " 'NR==1{split($2,a," ");print a[1]}')
-sed -i -r "s/VECTR_HOSTNAME\=.*$/VECTR_HOSTNAME=$ip/g" /opt/vectr/.env
-sudo docker-compose up -d
 # add crontab to start VECTR after boot
-cronjob="@reboot sleep 30 && sudo /opt/vectr/set-ip.sh"
+wget https://raw.githubusercontent.com/clr2of8/dc8-deployment-PUBLIC/master/scripts/set-ip.sh -P /opt/vectr/set-ip.sh
+chmod +x /opt/vectr/set-ip.sh
+croncmd="sleep 30 && sudo /opt/vectr/set-ip.sh"
+cronjob="@reboot $croncmd"
 ( crontab -l -u art | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -u art -
 
 # add art user to VECTR
+
+echo "****Done with OnDemand Caldera Linux VM Setup****"
+echo "****Restar this VM and log in as user:art password:AtomicRedTeam1!****"
