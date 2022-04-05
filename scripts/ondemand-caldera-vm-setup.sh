@@ -27,6 +27,7 @@ wget https://raw.githubusercontent.com/clr2of8/dc8-deployment-PUBLIC/master/cald
 sed -i s/op.finish[[:space:]]and[[:space:]]//g /home/art/caldera/plugins/training/app/flags/operations/flag_*
 sed -i s/[[:space:]]and[[:space:]]op.finish//g /home/art/caldera/plugins/training/app/flags/plugins/manx/flag_0.py
 sed -i s/op.finish[[:space:]]and[[:space:]]//g /home/art/caldera/plugins/training/app/flags/plugins/mock/flag_*
+chown -R art:art /home/art/caldera
 
 
 echo "****Installing VECTR v8.2.2****"
