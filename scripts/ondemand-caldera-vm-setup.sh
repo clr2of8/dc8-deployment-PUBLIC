@@ -16,6 +16,7 @@ sudo tar -C /usr/local -xvf go1.17.7.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin' >> /home/art/.profile
 
 echo "****Installing MITRE CALDERA v4.0.0-beta****"
+apt install upx -y
 git clone https://github.com/mitre/caldera.git --recursive --branch 4.0.0-beta
 cd caldera
 sudo pip3 install -r requirements.txt
