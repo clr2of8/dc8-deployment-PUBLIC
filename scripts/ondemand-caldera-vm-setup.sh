@@ -1,4 +1,14 @@
 #!/bin/bash
+
+# Manual steps
+# Run this script as sudo from an account with username 'art'
+# * sudo add-apt-repository universe (is this needed?)
+# * sudo apt install xubuntu-desktop (restart and choose settings on login screen)
+# * turn off lock screen
+# * add bookmarks for caldera and vectr on localhost, and bookmark for this script
+# * add art user to VECTR
+
+
 echo "****Installing Git,pip3,curl****"
 apt update
 apt install git python3-pip curl -y
@@ -44,12 +54,4 @@ croncmd="sleep 30 && sudo /opt/vectr/set-ip.sh"
 cronjob="@reboot $croncmd"
 ( crontab -l -u art | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -u art -
 
-# Manual steps
-# * sudo add-apt-repository universe
-# * sudo apt install xubuntu-desktop (restart and choose settings on login screen)
-# * add art user to VECTR
-# * turn off lock screen
-# * add bookmarks for caldera and vectr on localhost?
-
 echo "****Done with OnDemand Caldera Linux VM Setup****"
-echo "****Restart this VM and log in as user:art password:AtomicRedTeam1!****"
