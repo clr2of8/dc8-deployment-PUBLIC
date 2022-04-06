@@ -7,7 +7,6 @@ echo "****Adding the 'art' user****"
 sudo su -c "useradd art -s /bin/bash -m"
 sudo chpasswd << 'END'
 art:AtomicRedTeam1!
-usermod -aG sudo art
 END
 echo "art ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 sudo su art
