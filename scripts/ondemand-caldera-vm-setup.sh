@@ -51,5 +51,6 @@ chmod +x /opt/vectr/set-ip.sh
 croncmd="sleep 30 && sudo /opt/vectr/set-ip.sh"
 cronjob="@reboot $croncmd"
 ( crontab -l -u art | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -u art -
+sudo /opt/vectr/set-ip.sh
 
 echo "****Done with OnDemand Caldera Linux VM Setup****"
