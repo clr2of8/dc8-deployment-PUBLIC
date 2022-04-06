@@ -54,6 +54,8 @@ cronjob="@reboot $croncmd"
 # Manual steps
 # * add art user to VECTR
 # * userdel ubuntu
+# * turn off lock screen
+# * add bookmarks for caldera and vectr on localhost?
 
 echo "****Done with OnDemand Caldera Linux VM Setup****"
 echo "****Restart this VM and log in as user:art password:AtomicRedTeam1!****"
