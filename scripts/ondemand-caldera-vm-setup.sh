@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Manual steps
-# Run this script as sudo from an account with username 'art'
+# * Run this script as sudo from an account with username 'art'
 # * sudo add-apt-repository universe (is this needed?)
 # * sudo apt install xubuntu-desktop (restart and choose settings on login screen)
 # * turn off lock screen
