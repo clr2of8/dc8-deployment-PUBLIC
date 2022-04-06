@@ -41,6 +41,8 @@ mkdir -p /opt/vectr
 cd /opt/vectr
 wget https://github.com/SecurityRiskAdvisors/VECTR/releases/download/ce-8.2.2/sra-vectr-runtime-8.2.2-ce.zip -P /opt/vectr
 unzip -o sra-vectr-runtime-8.2.2-ce.zip
+docker-compose down
+docker-compose up
 # add crontab to start VECTR after boot
 wget https://raw.githubusercontent.com/clr2of8/dc8-deployment-PUBLIC/master/scripts/set-ip.sh -O /opt/vectr/set-ip.sh
 chmod +x /opt/vectr/set-ip.sh
