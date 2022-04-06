@@ -16,9 +16,7 @@ apt install git python3-pip curl -y
 
 echo "****Installing GO****"
 cd /home/art
-curl -OL https://golang.org/dl/go1.17.7.linux-amd64.tar.gz
-sudo tar -C /usr/local -xvf go1.17.7.linux-amd64.tar.gz
-echo 'export PATH=$PATH:/usr/local/go/bin' >> /home/art/.profile
+sudo apt install golang-go
 
 echo "****Installing MITRE CALDERA v4.0.0-beta****"
 sudo apt install upx -y
