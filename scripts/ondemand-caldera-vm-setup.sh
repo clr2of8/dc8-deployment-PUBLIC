@@ -48,7 +48,9 @@ croncmd="sleep 30 && sudo /opt/vectr/set-ip.sh"
 cronjob="@reboot $croncmd"
 ( crontab -l -u art | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -u art -
 
-# add art user to VECTR
+# Manual steps
+# * add art user to VECTR
+# * userdel ubuntu
 
 echo "****Done with OnDemand Caldera Linux VM Setup****"
 echo "****Restart this VM and log in as user:art password:AtomicRedTeam1!****"
