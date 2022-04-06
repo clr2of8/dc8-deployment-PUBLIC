@@ -4,8 +4,8 @@ apt update
 apt install git python3-pip curl -y
 
 echo "****Adding the 'art' user****"
-sudo su -c "useradd art -s /bin/bash -m"
-echo -e "AtomicRedTeam1"'!'"\nAtomicRedTeam1"'!'"\n" | passwd art
+# perl -e "print crypt('AtomicRedTeam1\!','password')"
+useradd -m -p paBQOnbelncTY bob78
 echo "art ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 sudo su art
 sudo su -
