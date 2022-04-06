@@ -52,6 +52,7 @@ cronjob="@reboot $croncmd"
 ( crontab -l -u art | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -u art -
 
 # Manual steps
+# * sudo apt-get -y install xfce4
 # * add art user to VECTR
 # * userdel ubuntu
 # * turn off lock screen
