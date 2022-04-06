@@ -5,8 +5,8 @@ apt install git python3-pip curl -y
 
 echo "****Adding the 'art' user****"
 # perl -e "print crypt('AtomicRedTeam1\!','password')"
-useradd -m -s /usr/bin/bash -p paBQOnbelncTY art
-echo "art ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+#useradd -m -s /usr/bin/bash -p paBQOnbelncTY art
+#echo "art ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 echo "****Installing GO****"
 cd /home/art
@@ -34,7 +34,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io docker-compose unzip -y
-sudo apt upgrade -y
+#sudo apt upgrade -y
 sudo systemctl enable docker
 sudo docker-compose down
 mkdir -p /opt/vectr
