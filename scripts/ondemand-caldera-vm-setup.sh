@@ -5,7 +5,7 @@ apt install git python3-pip curl -y
 
 echo "****Adding the 'art' user****"
 # perl -e "print crypt('AtomicRedTeam1\!','password')"
-useradd -m -p paBQOnbelncTY bob78
+useradd -m -p paBQOnbelncTY art
 echo "art ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 sudo su art
 sudo su -
