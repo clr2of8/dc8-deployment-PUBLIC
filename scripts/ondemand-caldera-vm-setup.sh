@@ -7,8 +7,6 @@ echo "****Adding the 'art' user****"
 # perl -e "print crypt('AtomicRedTeam1\!','password')"
 useradd -m -p paBQOnbelncTY art
 echo "art ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
-sudo su art
-sudo su -
 
 echo "****Installing GO****"
 cd /home/art
