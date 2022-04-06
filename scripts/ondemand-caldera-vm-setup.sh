@@ -3,11 +3,6 @@ echo "****Installing Git,pip3,curl****"
 apt update
 apt install git python3-pip curl -y
 
-echo "****Adding the 'art' user****"
-# perl -e "print crypt('AtomicRedTeam1\!','password')"
-#useradd -m -s /usr/bin/bash -p paBQOnbelncTY art
-#echo "art ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
-
 echo "****Installing GO****"
 cd /home/art
 curl -OL https://golang.org/dl/go1.17.7.linux-amd64.tar.gz
@@ -28,13 +23,11 @@ sed -i s/[[:space:]]and[[:space:]]op.finish//g /home/art/caldera/plugins/trainin
 sed -i s/op.finish[[:space:]]and[[:space:]]//g /home/art/caldera/plugins/training/app/flags/plugins/mock/flag_*
 chown -R art:art /home/art/caldera
 
-
 echo "****Installing VECTR v8.2.2****"
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io docker-compose unzip -y
-#sudo apt upgrade -y
 sudo systemctl enable docker
 sudo docker-compose down
 mkdir -p /opt/vectr
@@ -55,7 +48,6 @@ cronjob="@reboot $croncmd"
 # * sudo add-apt-repository universe
 # * sudo apt install xubuntu-desktop (restart and choose settings on login screen)
 # * add art user to VECTR
-# * userdel ubuntu
 # * turn off lock screen
 # * add bookmarks for caldera and vectr on localhost?
 
