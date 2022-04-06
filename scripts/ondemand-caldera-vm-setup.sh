@@ -16,7 +16,7 @@ apt install git python3-pip curl -y
 
 echo "****Installing GO****"
 cd /home/art
-sudo apt install golang-go
+sudo apt install golang-go -y
 
 echo "****Installing MITRE CALDERA v4.0.0-beta****"
 sudo apt install upx -y
