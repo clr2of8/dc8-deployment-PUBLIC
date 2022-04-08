@@ -18,7 +18,7 @@ if (-not (Test-Path C:\Users\art)) {
     $password = ConvertTo-SecureString "AtomicRedTeam1!" -AsPlainText -Force
     New-LocalUser "art" -Password $password -ErrorAction Ignore
     Add-LocalGroupMember -Group "Administrators" -Member "art" -ErrorAction Ignore
-    Read-Host -Prompt "Switch users to the 'art' user then switch back to the IEUser and rerun this script. OK?" 
+    Read-Host -Prompt "Switch users to the 'art' user then this script again. OK?" 
     exit
 }
 
