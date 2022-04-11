@@ -51,7 +51,7 @@ Copy-Item 'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Notepad++.lnk' "
 Write-Host "Turning off Automatic Sample Submission" -ForegroundColor Cyan
 PowerShell Set-MpPreference -SubmitSamplesConsent 2
 
-# Turn of screensaver and screen lock features for convenience
+# Turn off screensaver and screen lock features for convenience
 Powercfg /Change -monitor-timeout-ac 0
 Powercfg /Change -standby-timeout-ac 0
 
