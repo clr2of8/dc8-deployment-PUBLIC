@@ -32,7 +32,7 @@ if ( -not ($property -and $property.'(Default)')) {
 
 # Installing Chrome Bookmarks
 Write-Host "Installing Chrome Bookmarks" -ForegroundColor Cyan
-New-Item -ItemType "directory" -Path "C:\Users\art\AppData\Local\Google\Chrome\User Data\Default" -ErrorAction Ignore
+New-Item -ItemType "directory" -Path "C:\Users\art\AppData\Local\Google\Chrome\User Data\Default" -ErrorAction Ignore | Out-Null
 Invoke-WebRequest "https://raw.githubusercontent.com/clr2of8/dc8-deployment-PUBLIC/master/Bookmarks" -OutFile "C:\Users\art\AppData\Local\Google\Chrome\User Data\Default\Bookmarks"
 
 # install Notepad++
