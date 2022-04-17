@@ -22,6 +22,8 @@ if (-not (Test-Path C:\Users\art)) {
     exit
 }
 
+Remove-Item 'C:\Users\art\Desktop\Microsoft Edge.lnk'
+
 # install Chrome (must be admin)
 $property = Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\chrome.exe' -ErrorAction Ignore
 if ( -not ($property -and $property.'(Default)')) {
