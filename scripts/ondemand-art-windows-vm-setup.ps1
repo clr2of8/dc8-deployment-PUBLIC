@@ -12,6 +12,60 @@ Function Install-Application($Url, $flags) {
     Until (!$ProcessesFound)
 }
 
+function Set-Bookmarks {
+    $bookmarksFile = "C:\Users\art\AppData\Local\Google\Chrome\User Data\Default\Bookmarks"
+    $calderaIP = "art-vm-0"
+    if (-Not (Test-Path $bookmarksFile)) {
+        Invoke-WebRequest "https://raw.githubusercontent.com/clr2of8/dc8-deployment-PUBLIC/master/Bookmarks" -OutFile "C:\Users\art\AppData\Local\Google\Chrome\User Data\Default\Bookmarks"
+    }
+    Invoke-WebRequest "https://raw.githubusercontent.com/clr2of8/dc8-deployment-PUBLIC/master/Bookmarks" -OutFile "$env:Temp\Bookmarks"
+
+    $newJsonData = Get-Content -Raw -Path "$env:Temp\Bookmarks" | ConvertFrom-Json
+
+    foreach ($child in $newJsonData.roots.bookmark_bar.children ) {
+        if ($child.name -eq "Labs") {
+            $child.url = $labsURL
+        }
+
+    }
+
+    $calderaFolder = ($newJsonData.roots.bookmark_bar.children | Where-Object { $_.Name -eq "Caldera" })
+    foreach ($child in $calderaFolder.children ) {
+        if ($child.name -eq "Caldera Server") {
+            if ($null -ne $calderaIP) {
+                $child.url = "http://$calderaIP`:8888"
+            }
+        }
+    }  
+
+    $vectrFolder = ($newJsonData.roots.bookmark_bar.children | Where-Object { $_.Name -eq "VECTR" })
+    foreach ($child in $vectrFolder.children ) {
+        if ($child.name -eq "VECTR Server") {
+                $child.url = "https://$calderaIP`:8081"
+        }
+    }
+    
+    $newJsonData = $newJsonData | ConvertTo-Json -Depth 100
+    Set-Content "$env:Temp\Bookmarks" $newJsonData
+    # only update the bookmark file and restart Chrome if there was a change
+    if ((Get-Content $bookmarksFile -raw) -ne (Get-Content "$env:Temp\Bookmarks" -raw)) {
+        $newJsonData | Set-Content $bookmarksFile
+        Stop-Process -Name "chrome" -Force
+    } 
+}
+
+function Set-CalderaIP {
+    $calderaIP = "art-vm-0"
+    if ($null -eq $calderaIP) { return }
+    $rdpFile = "c:\Users\art\Desktop\CALDERA.rdp"
+    Invoke-WebRequest "https://raw.githubusercontent.com/clr2of8/dc8-deployment-PUBLIC/master/windows-client/CALDERA.rdp" -OutFile $rdpFile
+
+    (Get-Content -raw $rdpFile) | ForEach-Object {
+        $_ -replace '(full address:s:)(.*)', "full address:s:$calderaIP" |
+        Add-Member NoteProperty PSPath $_.PSPath -PassThru
+    } | Set-Content -nonewline
+}
+    
 if (-not (Test-Path C:\Users\art)) {
     # add art user
     Write-Host "Adding 'art' user" -ForegroundColor Cyan
@@ -34,8 +88,7 @@ if ( -not ($property -and $property.'(Default)')) {
 
 # Installing Chrome Bookmarks
 Write-Host "Installing Chrome Bookmarks" -ForegroundColor Cyan
-New-Item -ItemType "directory" -Path "C:\Users\art\AppData\Local\Google\Chrome\User Data\Default" -ErrorAction Ignore | Out-Null
-Invoke-WebRequest "https://raw.githubusercontent.com/clr2of8/dc8-deployment-PUBLIC/master/Bookmarks" -OutFile "C:\Users\art\AppData\Local\Google\Chrome\User Data\Default\Bookmarks"
+Set-Bookmarks
 
 # install Notepad++
 if (-not (Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*  | where-Object DisplayName -like 'NotePad++*')) {
@@ -48,8 +101,9 @@ Write-Host "Creating Desktop Shortcuts" -ForegroundColor Cyan
 Copy-Item 'C:\Users\art\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Windows PowerShell\Windows PowerShell.lnk' "C:\Users\art\Desktop\PowerShell.lnk"
 Copy-Item 'C:\Users\art\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\System Tools\Command Prompt.lnk' "C:\Users\art\Desktop\Command Prompt.lnk"
 Copy-Item 'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Notepad++.lnk' "C:\Users\art\Desktop\Notepad++.lnk"
+Set-CalderaIP # add CALDERA.rdp shorcut to desktop
 
-# Turn off Windows Defender Automatic Sample Submission
+# Turn off Automatic Sample Submission in Windows Defender
 Write-Host "Turning off Automatic Sample Submission" -ForegroundColor Cyan
 PowerShell Set-MpPreference -SubmitSamplesConsent 2
 
