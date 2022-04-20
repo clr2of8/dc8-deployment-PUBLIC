@@ -45,4 +45,11 @@ cronjob="@reboot $croncmd"
 ( crontab -l -u art | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -u art -
 sudo /opt/vectr/set-ip.sh
 
+echo "****Configure for RDP Access****"
+sudo apt-get -y install xfce4
+sudo apt-get -y install xrdp
+sudo systemctl enable xrdp
+echo xfce4-session >~/.xsession
+sudo service xrdp restart
+
 echo "****Done with OnDemand Caldera Linux VM Setup****"
