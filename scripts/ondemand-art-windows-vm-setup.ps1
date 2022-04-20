@@ -22,13 +22,6 @@ function Set-Bookmarks {
 
     $newJsonData = Get-Content -Raw -Path "$env:Temp\Bookmarks" | ConvertFrom-Json
 
-    foreach ($child in $newJsonData.roots.bookmark_bar.children ) {
-        if ($child.name -eq "Labs") {
-            $child.url = $labsURL
-        }
-
-    }
-
     $calderaFolder = ($newJsonData.roots.bookmark_bar.children | Where-Object { $_.Name -eq "Caldera" })
     foreach ($child in $calderaFolder.children ) {
         if ($child.name -eq "Caldera Server") {
