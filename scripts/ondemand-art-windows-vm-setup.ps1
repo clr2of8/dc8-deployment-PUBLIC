@@ -21,6 +21,13 @@ function Set-Bookmarks {
     Invoke-WebRequest "https://raw.githubusercontent.com/clr2of8/dc8-deployment-PUBLIC/master/Bookmarks" -OutFile "$env:Temp\Bookmarks"
 
     $newJsonData = Get-Content -Raw -Path "$env:Temp\Bookmarks" | ConvertFrom-Json
+    
+    $labsURL = $null # This will remove the labs bookmark because it doesn't apply to the OnDemand course
+    foreach ($child in $newJsonData.roots.bookmark_bar.children ) {
+       if ($child.name -eq "Labs") {
+            $child.url = $labsURL
+       }
+     }
 
     $calderaFolder = ($newJsonData.roots.bookmark_bar.children | Where-Object { $_.Name -eq "Caldera" })
     foreach ($child in $calderaFolder.children ) {
