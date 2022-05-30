@@ -77,6 +77,7 @@ if (-not (Test-Path C:\Users\art)) {
     exit
 }
 
+Remove-LocalUser -Name "IEUser"
 Remove-Item 'C:\Users\art\Desktop\Microsoft Edge.lnk'
 
 # install Chrome (must be admin)
