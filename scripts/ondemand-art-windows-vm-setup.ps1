@@ -89,6 +89,7 @@ if ( -not ($property -and $property.'(Default)')) {
 }
 
 # Installing Chrome Bookmarks
+start-process chrome; sleep 3 # must start chrome before bookmarks file exists
 Write-Host "Installing Chrome Bookmarks" -ForegroundColor Cyan
 Set-Bookmarks
 
