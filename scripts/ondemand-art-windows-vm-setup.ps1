@@ -78,7 +78,6 @@ if (-not (Test-Path C:\Users\art)) {
 }
 
 Remove-LocalUser -Name "IEUser"
-Set-ItemProperty -path HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\System -Name Wallpaper -Value C:\Windows\Web\Wallpaper\Windows\img0.jpg
 Remove-Item 'C:\Users\art\Desktop\Microsoft Edge.lnk'
 
 # install Chrome (must be admin)
