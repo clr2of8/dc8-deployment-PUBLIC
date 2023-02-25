@@ -33,8 +33,8 @@ sudo systemctl enable docker
 sudo docker-compose down
 mkdir -p /opt/vectr
 cd /opt/vectr
-wget https://github.com/SecurityRiskAdvisors/VECTR/releases/download/ce-8.2.2/sra-vectr-runtime-8.2.2-ce.zip -P /opt/vectr
-unzip -o sra-vectr-runtime-8.2.2-ce.zip
+wget https://github.com/SecurityRiskAdvisors/VECTR/releases/download/ce-8.7.1/sra-vectr-runtime-8.7.1-ce.zip -P /opt/vectr
+unzip -o sra-vectr-runtime-8.7.1-ce.zip
 docker-compose down
 docker-compose up -d
 # add crontab to start VECTR after boot
