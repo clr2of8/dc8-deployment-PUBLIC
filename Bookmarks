@@ -1,227 +1,484 @@
 {
-   "checksum": "df8a99c4cb3920794cd7bc002dc25615",
+   "checksum": "e2cd7d50cd633c26a16d70ba8a9a5df8",
    "roots": {
       "bookmark_bar": {
          "children": [ {
-            "date_added": "13236976907000000",
-            "guid": "0509eea9-0dbf-4af6-ba8a-62b38bd2dbc0",
-            "id": "2",
-            "name": "Labs",
-            "type": "url",
-            "url": "https://1drv.ms/w/s!AvDXyd4cgfxesEclTt8tScoatJn2?e=pb0tsR"
-         }, {
             "children": [ {
                "date_added": "0",
+               "date_last_used": "0",
                "guid": "dc33107b-5238-41b5-b638-a87ce4fd66e8",
-               "id": "4",
+               "id": "3",
                "name": "MITRE ATT&CK™",
                "type": "url",
                "url": "https://attack.mitre.org/"
             }, {
                "date_added": "13248221721023364",
+               "date_last_used": "13322464576563072",
                "guid": "cd0a222d-ebe0-47d0-9acd-db7e55ec73a4",
-               "id": "5",
+               "id": "4",
                "name": "ATT&CK® Navigator",
                "type": "url",
                "url": "https://mitre-attack.github.io/attack-navigator/"
             }, {
                "date_added": "0",
+               "date_last_used": "13311107045625594",
                "guid": "9a6bed3e-1020-4de4-ba53-2c3795d1ee38",
-               "id": "6",
+               "id": "5",
                "name": "ATT&CK® Navigator ART Coverage",
                "type": "url",
                "url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/Indexes/Attack-Navigator-Layers/art-navigator-layer.json"
             }, {
                "date_added": "0",
+               "date_last_used": "13311107040718775",
                "guid": "670f9486-40fb-4e12-b9ec-79832c748d02",
-               "id": "7",
+               "id": "6",
                "name": "ATT&CK® Navigator GitHub",
                "type": "url",
                "url": "https://github.com/mitre-attack/attack-navigator"
             }, {
                "date_added": "13246824165874150",
+               "date_last_used": "13323560027915933",
                "guid": "d8ef7e18-9994-4336-a002-63626933c35b",
-               "id": "8",
+               "id": "7",
                "name": "Enterprise Techniques",
                "type": "url",
                "url": "https://attack.mitre.org/techniques/enterprise/"
+            }, {
+               "date_added": "13322455872856257",
+               "date_last_used": "13323559950672282",
+               "guid": "534d8661-a91c-4adb-90f6-10e8063edce1",
+               "id": "44",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "ATT&CK Powered Suit",
+               "type": "url",
+               "url": "https://chrome.google.com/webstore/detail/attck-powered-suit/gfhomppaadldngjnmbefmmiokgefjddd"
+            }, {
+               "children": [ {
+                  "date_added": "13323560343743391",
+                  "date_last_used": "0",
+                  "guid": "46d41a81-f134-4aac-ad69-78d16d00b8d2",
+                  "id": "59",
+                  "name": "ATT&CK Training and Certification - MITRE ATT&CK Defender (MAD)",
+                  "type": "url",
+                  "url": "https://mitre-engenuity.org/cybersecurity/mad/"
+               }, {
+                  "date_added": "13323560139995786",
+                  "date_last_used": "0",
+                  "guid": "5d505844-c67a-40e3-b5dd-437d9f0bcdcc",
+                  "id": "53",
+                  "meta_info": {
+                     "power_bookmark_meta": ""
+                  },
+                  "name": "Fundamentals",
+                  "type": "url",
+                  "url": "https://app.cybrary.it/browse/course/mitre-attack-defender-mad-attack-fundamentals"
+               }, {
+                  "date_added": "13323560195506890",
+                  "date_last_used": "0",
+                  "guid": "16baf8c5-1059-47f6-b42b-55df7b38bda0",
+                  "id": "54",
+                  "meta_info": {
+                     "power_bookmark_meta": ""
+                  },
+                  "name": "Cyber Threat Intelligence",
+                  "type": "url",
+                  "url": "https://app.cybrary.it/browse/course/mitre-attack-defender-mad-attack-for-cyber-threat-intelligence"
+               }, {
+                  "date_added": "13323560216919926",
+                  "date_last_used": "0",
+                  "guid": "6a093420-e967-405b-acae-b159d8f45e3d",
+                  "id": "55",
+                  "meta_info": {
+                     "power_bookmark_meta": ""
+                  },
+                  "name": "SOC Assessments",
+                  "type": "url",
+                  "url": "https://app.cybrary.it/browse/course/mitre-attack-defender-mad-attack-for-soc-assessments"
+               }, {
+                  "date_added": "13323560236027398",
+                  "date_last_used": "0",
+                  "guid": "5d2353a3-02f8-4d08-bbc2-66aa85ac2ed2",
+                  "id": "56",
+                  "meta_info": {
+                     "power_bookmark_meta": ""
+                  },
+                  "name": "Adversary Emulation",
+                  "type": "url",
+                  "url": "https://app.cybrary.it/browse/course/mitre-attack-adversary-emulation"
+               }, {
+                  "date_added": "13323560266674573",
+                  "date_last_used": "0",
+                  "guid": "038585c8-03dc-4822-b258-6e487273d3ca",
+                  "id": "57",
+                  "meta_info": {
+                     "power_bookmark_meta": ""
+                  },
+                  "name": "Threat Hunting and Detection Engineering",
+                  "type": "url",
+                  "url": "https://app.cybrary.it/browse/course/mitre-attack-threat-hunting"
+               }, {
+                  "date_added": "13323560299378396",
+                  "date_last_used": "0",
+                  "guid": "f2ae29c0-ee20-4864-a382-22f0250f7c93",
+                  "id": "58",
+                  "meta_info": {
+                     "power_bookmark_meta": ""
+                  },
+                  "name": "Purple Teaming Fundamentals",
+                  "type": "url",
+                  "url": "https://app.cybrary.it/browse/course/mitre-attack-purple-teaming"
+               } ],
+               "date_added": "13323559897456050",
+               "date_last_used": "0",
+               "date_modified": "13323560350806165",
+               "guid": "5aae1a90-aad3-420e-8c03-7509e2b5dbc8",
+               "id": "50",
+               "name": "MITRE ATT&CK™ Defender (MAD)",
+               "type": "folder"
+            }, {
+               "date_added": "13323562995237896",
+               "date_last_used": "0",
+               "guid": "37cdce57-8f8f-4535-8c46-ac99d382070d",
+               "id": "70",
+               "name": "ATT&CK® Evaluations",
+               "type": "url",
+               "url": "https://attackevals.mitre-engenuity.org/"
+            }, {
+               "date_added": "13323560089836954",
+               "date_last_used": "0",
+               "guid": "785ff8e4-37f7-469a-b415-dce2a719c33a",
+               "id": "52",
+               "name": "Adversary Emulation Library",
+               "type": "url",
+               "url": "https://github.com/center-for-threat-informed-defense/adversary_emulation_library"
+            }, {
+               "date_added": "13323563270715900",
+               "date_last_used": "0",
+               "guid": "74e6e80c-3121-4cef-9026-52055645699c",
+               "id": "77",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "D3FEND",
+               "type": "url",
+               "url": "https://d3fend.mitre.org/"
+            }, {
+               "date_added": "13323562555632296",
+               "date_last_used": "0",
+               "guid": "2b207b99-c930-4ccb-ad4c-93ffef7a157d",
+               "id": "63",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Slack Invite",
+               "type": "url",
+               "url": "https://join.slack.com/t/mitreattack/shared_invite/zt-ny1a3yon-XkT_OS1IF~ZYrESq8Xtqjg"
             } ],
             "date_added": "13242893495312211",
-            "date_modified": "13248221735152755",
+            "date_last_used": "0",
+            "date_modified": "13323563274549302",
             "guid": "a7728c8b-30b4-4a7c-967a-0a18cf16de95",
-            "id": "3",
-            "name": "Mitre ATT&CK",
+            "id": "2",
+            "name": "MITRE",
             "type": "folder"
          }, {
             "children": [ {
                "date_added": "0",
+               "date_last_used": "13323455443450921",
                "guid": "43c024fc-bf2f-453e-b0dd-dddeeb2b14e8",
-               "id": "10",
+               "id": "9",
                "name": "Atomic Red Team GitHub",
                "type": "url",
                "url": "https://github.com/redcanaryco/atomic-red-team"
             }, {
                "date_added": "0",
+               "date_last_used": "13323478940938211",
                "guid": "9062a64b-55cb-414e-a734-a520aace2c68",
-               "id": "11",
+               "id": "10",
                "name": "Atomics Folder",
                "type": "url",
                "url": "https://github.com/redcanaryco/atomic-red-team/tree/master/atomics"
             }, {
                "date_added": "0",
+               "date_last_used": "13323453603283323",
                "guid": "6c47529e-ba0b-4e3d-b959-0d8d29d102b6",
-               "id": "12",
+               "id": "11",
                "name": "Invoke-AtomicRedTeam",
                "type": "url",
                "url": "https://github.com/redcanaryco/invoke-atomicredteam"
             }, {
                "date_added": "13236986263000000",
+               "date_last_used": "13323453537566824",
                "guid": "6e6d0a9d-c75c-461c-80d5-3b5f00778e78",
-               "id": "13",
+               "id": "12",
                "name": "Invoke-AtomicRedTeam Wiki",
                "type": "url",
                "url": "https://github.com/redcanaryco/invoke-atomicredteam/wiki"
             }, {
                "date_added": "0",
+               "date_last_used": "0",
                "guid": "fd87779b-f958-430a-9f8c-f1bcb9339ec3",
-               "id": "14",
+               "id": "13",
                "name": "Windows Atomics Index",
                "type": "url",
                "url": "https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/Indexes/Indexes-CSV/windows-index.csv"
             }, {
                "date_added": "13236976563000000",
+               "date_last_used": "0",
                "guid": "29761808-6006-41a6-ad02-ea4fefb3c96c",
-               "id": "15",
+               "id": "14",
                "name": "ATT&CK Navigator Layers",
                "type": "url",
                "url": "https://github.com/redcanaryco/atomic-red-team/tree/master/atomics/Indexes/Attack-Navigator-Layers"
+            }, {
+               "date_added": "13323562656724641",
+               "date_last_used": "0",
+               "guid": "53c09658-7aca-46e6-95f0-fc2055701194",
+               "id": "64",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Contributing Wiki",
+               "type": "url",
+               "url": "https://github.com/redcanaryco/atomic-red-team/wiki/Contributing"
+            }, {
+               "date_added": "13323562470262528",
+               "date_last_used": "0",
+               "guid": "a34090e2-2fd7-4dc0-b50e-2aa1931f066c",
+               "id": "62",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Slack Invite",
+               "type": "url",
+               "url": "https://slack.atomicredteam.io/"
             } ],
             "date_added": "13242893495310769",
-            "date_modified": "13246824119631808",
+            "date_last_used": "0",
+            "date_modified": "13323562659085392",
             "guid": "c4143e9a-b18b-4299-b178-88c142477992",
-            "id": "9",
+            "id": "8",
             "name": "ART",
             "type": "folder"
          }, {
             "children": [ {
-               "date_added": "13253332421957196",
-               "guid": "32cb4bbe-d121-4d9d-9a43-a9478540e8cf",
-               "id": "17",
-               "name": "Prelude Operator",
-               "type": "url",
-               "url": "https://www.prelude.org/"
-            }, {
-               "date_added": "13257705536236430",
-               "guid": "d37d8c85-6766-4a41-869c-46ce2d756dc3",
-               "id": "18",
-               "name": "Community TTP Repository",
-               "type": "url",
-               "url": "https://github.com/preludeorg/community"
-            }, {
-               "date_added": "13257705548104250",
-               "guid": "02a2b784-1419-4138-8a82-46c7832cf9b2",
-               "id": "19",
-               "name": "Pneuma Agent Source Code",
-               "type": "url",
-               "url": "https://github.com/preludeorg/pneuma"
-            }, {
-               "date_added": "13257705565165277",
-               "guid": "75e73bde-7403-4beb-8a0a-df14a2ddf458",
-               "id": "20",
-               "name": "Operator Support",
-               "type": "url",
-               "url": "https://github.com/preludeorg/operator-support"
-            } ],
-            "date_added": "13253332245365555",
-            "date_modified": "13257705565165277",
-            "guid": "927cd329-18e7-4352-a14e-c211e4983263",
-            "id": "16",
-            "name": "Prelude Operator",
-            "type": "folder"
-         }, {
-            "children": [ {
                "date_added": "13253332350982437",
+               "date_last_used": "13321230311236841",
                "guid": "0d112d57-0c96-445b-a439-0add40d1dc5d",
-               "id": "22",
+               "id": "21",
                "name": "VECTR Server",
                "type": "url",
-               "url": "https://caldera-ip:8081/"
+               "url": "https://art-vm-0:8081/"
             }, {
                "date_added": "13253332372935674",
+               "date_last_used": "0",
                "guid": "9cc76534-0742-4a76-9c69-febfeb3ebffe",
-               "id": "23",
+               "id": "22",
                "name": "VECTR | Overview",
                "type": "url",
                "url": "https://vectr.io/"
             }, {
                "date_added": "13257706193220817",
+               "date_last_used": "0",
                "guid": "d313edee-e5ae-44c3-aaf1-6a398f7ef0c7",
-               "id": "24",
+               "id": "23",
                "name": "How To Videos - VECTR Documentation",
                "type": "url",
                "url": "https://docs.vectr.io/How-To-Videos/"
+            }, {
+               "date_added": "13323562282451868",
+               "date_last_used": "0",
+               "guid": "86577cb4-f85c-4ed9-a1fc-573b9135032b",
+               "id": "61",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Discord Invite",
+               "type": "url",
+               "url": "https://discord.gg/2FRd8zf728"
             } ],
             "date_added": "13253332232658187",
-            "date_modified": "13257706193220817",
+            "date_last_used": "0",
+            "date_modified": "13323562282451868",
             "guid": "9f598c53-a28f-42c2-b384-b725bdd78abd",
-            "id": "21",
+            "id": "20",
             "name": "VECTR",
             "type": "folder"
          }, {
             "children": [ {
                "date_added": "13243046588104900",
+               "date_last_used": "13323393828464242",
                "guid": "3f4c5238-96e6-42b4-8009-1c204fbc285b",
-               "id": "26",
+               "id": "25",
                "name": "CALDERA Server",
                "type": "url",
-               "url": "http://caldera-ip:8888/"
+               "url": "http://art-vm-0:8888/"
             }, {
                "date_added": "13246048193903489",
+               "date_last_used": "13323562711407800",
                "guid": "8956a597-2cea-4112-aca0-d43ff55f07fd",
-               "id": "27",
+               "id": "26",
                "name": "CALDERA Documentation",
                "type": "url",
                "url": "https://caldera.readthedocs.io/en/latest/"
             }, {
                "date_added": "13246084120371359",
+               "date_last_used": "13323562715779041",
                "guid": "82fff951-20a2-481b-b73d-690d5a6e9932",
-               "id": "28",
+               "id": "27",
                "name": "CALDERA GitHub",
                "type": "url",
                "url": "https://github.com/mitre/caldera"
+            }, {
+               "date_added": "13323562233147855",
+               "date_last_used": "0",
+               "guid": "73bf38ea-f6e9-41b0-8006-58511ecdf0ef",
+               "id": "60",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Slack Invite",
+               "type": "url",
+               "url": "https://join.slack.com/t/mitre-caldera/shared_invite/zt-rvngjjpw-OQHAqpUT87DcyClTosF8dQ"
             } ],
             "date_added": "13243046654178236",
-            "date_modified": "13246824079680187",
+            "date_last_used": "0",
+            "date_modified": "13323562233147855",
             "guid": "bb878d57-7053-478b-86be-66eadceef1da",
-            "id": "25",
+            "id": "24",
             "name": "CALDERA",
             "type": "folder"
          }, {
             "children": [ {
-               "date_added": "13248221774305521",
-               "guid": "6e22c42f-7f90-4f06-a6ad-c9e84796da78",
-               "id": "30",
-               "name": "PurpleSharp documentation",
+               "date_added": "13323563395246450",
+               "date_last_used": "0",
+               "guid": "d8c6133a-e28c-46b4-a951-e48cb09a250e",
+               "id": "79",
+               "name": "Antisyphon Training",
                "type": "url",
-               "url": "https://purplesharp.readthedocs.io/en/latest/home/purplesharp.html"
+               "url": "https://www.antisyphontraining.com/on-demand-course-catalog/"
             }, {
-               "date_added": "13248221813508314",
-               "guid": "48661641-d149-4ca7-beb0-d5c2e7f488cb",
-               "id": "31",
-               "name": "PurpleSharp GitHub",
+               "date_added": "13323562829815919",
+               "date_last_used": "0",
+               "guid": "a3fc4335-8f94-4358-8f2d-6796b31ef810",
+               "id": "66",
+               "name": "PurpleSharp",
                "type": "url",
                "url": "https://github.com/mvelazc0/PurpleSharp"
+            }, {
+               "date_added": "13323562846166683",
+               "date_last_used": "0",
+               "guid": "9508566d-566a-423d-8611-526645a4402e",
+               "id": "67",
+               "name": "Prelude ",
+               "type": "url",
+               "url": "https://prelude.org/"
+            }, {
+               "date_added": "13323562907679622",
+               "date_last_used": "0",
+               "guid": "89c754d7-90ef-4678-8d7e-0d2beddc5e79",
+               "id": "68",
+               "name": "Security Datasets",
+               "type": "url",
+               "url": "https://securitydatasets.com/introduction.html"
+            }, {
+               "date_added": "13323562944494654",
+               "date_last_used": "0",
+               "guid": "a893e922-f21f-4927-9fa7-e3597437240e",
+               "id": "69",
+               "name": "Splunk Attack Data",
+               "type": "url",
+               "url": "https://github.com/splunk/attack_data"
+            }, {
+               "children": [ {
+                  "date_added": "13323563107295884",
+                  "date_last_used": "0",
+                  "guid": "246cc2fd-e2b6-4049-85b2-aad646c9fc1d",
+                  "id": "72",
+                  "meta_info": {
+                     "power_bookmark_meta": ""
+                  },
+                  "name": "Cyber Analytics Repository (CAR)",
+                  "type": "url",
+                  "url": "https://car.mitre.org/"
+               }, {
+                  "date_added": "13323563124949095",
+                  "date_last_used": "0",
+                  "guid": "143d1754-d053-4c10-9025-6ae40af3f1cd",
+                  "id": "73",
+                  "meta_info": {
+                     "power_bookmark_meta": ""
+                  },
+                  "name": "Sigma",
+                  "type": "url",
+                  "url": "https://github.com/SigmaHQ/sigma"
+               }, {
+                  "date_added": "13323563147301125",
+                  "date_last_used": "0",
+                  "guid": "0fa7e6a3-6d25-4358-87b7-3feab929440d",
+                  "id": "74",
+                  "meta_info": {
+                     "power_bookmark_meta": ""
+                  },
+                  "name": "Elastic",
+                  "type": "url",
+                  "url": "https://github.com/elastic/detection-rules"
+               }, {
+                  "date_added": "13323563177440407",
+                  "date_last_used": "0",
+                  "guid": "b0137666-b10c-48d8-bf8d-377474bd3066",
+                  "id": "75",
+                  "meta_info": {
+                     "power_bookmark_meta": ""
+                  },
+                  "name": "Splunk Security Content",
+                  "type": "url",
+                  "url": "https://github.com/splunk/security_content/tree/develop/detections"
+               }, {
+                  "date_added": "13323563210410265",
+                  "date_last_used": "0",
+                  "guid": "347bfad0-3a1a-4592-a01e-ba6234d07582",
+                  "id": "76",
+                  "meta_info": {
+                     "power_bookmark_meta": ""
+                  },
+                  "name": "Comparison",
+                  "type": "url",
+                  "url": "https://car.mitre.org/coverage/"
+               } ],
+               "date_added": "13323563082673091",
+               "date_last_used": "0",
+               "date_modified": "13323563210410265",
+               "guid": "17faa058-a5f1-4812-98dc-fcf3a1b6a5c6",
+               "id": "71",
+               "name": "Detection Rules",
+               "type": "folder"
+            }, {
+               "date_added": "13323563315587200",
+               "date_last_used": "0",
+               "guid": "05243e57-460e-4bf0-904d-d38d0140b876",
+               "id": "78",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Decider Tool by CISA",
+               "type": "url",
+               "url": "https://github.com/cisagov/decider"
             } ],
-            "date_added": "13248221751637604",
-            "date_modified": "13248221900516883",
-            "guid": "c374b9aa-78fd-4df1-8974-eade1011c918",
-            "id": "29",
-            "name": "PurpleSharp",
+            "date_added": "13323562824562407",
+            "date_last_used": "0",
+            "date_modified": "13323563416227696",
+            "guid": "d0988577-ee13-40a5-bb37-b7becc2151af",
+            "id": "65",
+            "name": "MISC",
             "type": "folder"
          } ],
          "date_added": "13242893379423635",
-         "date_modified": "13257706187376624",
-         "guid": "00000000-0000-4000-a000-000000000002",
+         "date_last_used": "0",
+         "date_modified": "13323562824563178",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
          "id": "1",
          "name": "Bookmarks bar",
          "type": "folder"
@@ -229,18 +486,20 @@
       "other": {
          "children": [  ],
          "date_added": "13242893379423638",
+         "date_last_used": "0",
          "date_modified": "0",
-         "guid": "00000000-0000-4000-a000-000000000003",
-         "id": "36",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "31",
          "name": "Other bookmarks",
          "type": "folder"
       },
       "synced": {
          "children": [  ],
          "date_added": "13242893379423639",
+         "date_last_used": "0",
          "date_modified": "0",
-         "guid": "00000000-0000-4000-a000-000000000004",
-         "id": "37",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "32",
          "name": "Mobile bookmarks",
          "type": "folder"
       }
