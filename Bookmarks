@@ -1,5 +1,5 @@
 {
-   "checksum": "3542e835bac10c040fcc73e624cc9897",
+   "checksum": "a7c3a1dd1f2e6b669277a0838aeecc52",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -469,12 +469,12 @@
                "url": "https://github.com/mvelazc0/PurpleSharp"
             }, {
                "date_added": "13323562846166683",
-               "date_last_used": "0",
+               "date_last_used": "13323818830330402",
                "guid": "9508566d-566a-423d-8611-526645a4402e",
                "id": "67",
-               "name": "Prelude ",
+               "name": "Prelude Detect",
                "type": "url",
-               "url": "https://prelude.org/"
+               "url": "https://preludesecurity.com/"
             }, {
                "date_added": "13323562907679622",
                "date_last_used": "0",
