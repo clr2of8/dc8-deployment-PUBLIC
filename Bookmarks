@@ -1,5 +1,5 @@
 {
-   "checksum": "e2cd7d50cd633c26a16d70ba8a9a5df8",
+   "checksum": "3542e835bac10c040fcc73e624cc9897",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -210,7 +210,7 @@
                "url": "https://github.com/redcanaryco/invoke-atomicredteam"
             }, {
                "date_added": "13236986263000000",
-               "date_last_used": "13323453537566824",
+               "date_last_used": "13323642894522129",
                "guid": "6e6d0a9d-c75c-461c-80d5-3b5f00778e78",
                "id": "12",
                "name": "Invoke-AtomicRedTeam Wiki",
@@ -244,6 +244,38 @@
                "type": "url",
                "url": "https://github.com/redcanaryco/atomic-red-team/wiki/Contributing"
             }, {
+               "date_added": "13323630419729742",
+               "date_last_used": "0",
+               "guid": "6d40c8c9-ffd2-4caa-baf6-fcf86a52b112",
+               "id": "81",
+               "name": "Explore Atomic Red Team",
+               "type": "url",
+               "url": "https://atomicredteam.io/"
+            }, {
+               "date_added": "13323630724841147",
+               "date_last_used": "13323676262055861",
+               "guid": "2983a370-3168-48c6-86f1-d195de104e04",
+               "id": "83",
+               "name": "Atomic Spotlights with Carrie Roberts",
+               "type": "url",
+               "url": "https://www.youtube.com/playlist?list=PL-4fuTjKox5en_SOd0teFlsk9co4StXnW"
+            }, {
+               "date_added": "13323630576136282",
+               "date_last_used": "0",
+               "guid": "b024639b-523a-42aa-aab6-b94808d4c5db",
+               "id": "82",
+               "name": "Atomics on a Friday",
+               "type": "url",
+               "url": "https://www.youtube.com/@atomicsonafriday/videos"
+            }, {
+               "date_added": "13323630768754097",
+               "date_last_used": "13323631354805695",
+               "guid": "95b2eb7d-44e0-45ab-b73d-4b63d8942de8",
+               "id": "84",
+               "name": "ATH Atomic Test Harnesses",
+               "type": "url",
+               "url": "https://github.com/redcanaryco/AtomicTestHarnesses"
+            }, {
                "date_added": "13323562470262528",
                "date_last_used": "0",
                "guid": "a34090e2-2fd7-4dc0-b50e-2aa1931f066c",
@@ -257,7 +289,7 @@
             } ],
             "date_added": "13242893495310769",
             "date_last_used": "0",
-            "date_modified": "13323562659085392",
+            "date_modified": "13323630842545724",
             "guid": "c4143e9a-b18b-4299-b178-88c142477992",
             "id": "8",
             "name": "ART",
@@ -305,6 +337,74 @@
             "guid": "9f598c53-a28f-42c2-b384-b725bdd78abd",
             "id": "20",
             "name": "VECTR",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13323802856399947",
+               "date_last_used": "13323812332351704",
+               "guid": "763353d8-9cd8-41e1-9888-b2bf989617b9",
+               "id": "86",
+               "name": "Prelude Operator – Purple Team Infrastructure",
+               "type": "url",
+               "url": "https://www.preludesecurity.com/products/operator"
+            }, {
+               "date_added": "13323802881745062",
+               "date_last_used": "13323816835201425",
+               "guid": "3bd31346-3e2a-424d-abf5-675ec7a818fa",
+               "id": "87",
+               "name": "Documentation",
+               "type": "url",
+               "url": "https://docs.preludesecurity.com/v1/docs"
+            }, {
+               "date_added": "13323802946173350",
+               "date_last_used": "13323817068172560",
+               "guid": "cad6fedf-60bf-45b2-9337-76f3a9baf71c",
+               "id": "88",
+               "name": "Prelude Attack Chains",
+               "type": "url",
+               "url": "https://chains.prelude.org/chains"
+            }, {
+               "date_added": "13323804813343674",
+               "date_last_used": "13323816749117535",
+               "guid": "c7b177de-14f0-465d-ace7-ff85679a5dcd",
+               "id": "89",
+               "name": "Community TTP Repository",
+               "type": "url",
+               "url": "https://github.com/preludeorg/community"
+            }, {
+               "date_added": "13323816769615243",
+               "date_last_used": "0",
+               "guid": "a64ebb21-6dd4-4915-b016-0e139c8ed7d5",
+               "id": "90",
+               "name": "Pneuma Agent Source Code",
+               "type": "url",
+               "url": "https://github.com/preludeorg/pneuma"
+            }, {
+               "date_added": "13323816802923954",
+               "date_last_used": "0",
+               "guid": "fce61b7b-a457-4557-a066-b277de2c544f",
+               "id": "91",
+               "name": "Operator Support",
+               "type": "url",
+               "url": "https://github.com/preludeorg/operator-support"
+            }, {
+               "date_added": "13323817184634268",
+               "date_last_used": "13323817203172313",
+               "guid": "44d343e8-c20a-4107-a95c-5a5db9db7b03",
+               "id": "92",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Discord Invite",
+               "type": "url",
+               "url": "https://discord.com/invite/NWURE99JzE"
+            } ],
+            "date_added": "13323802850901324",
+            "date_last_used": "0",
+            "date_modified": "13323817184634268",
+            "guid": "f03a3005-3a76-4eec-b7c2-3a68a61437ad",
+            "id": "85",
+            "name": "Prelude Operator",
             "type": "folder"
          }, {
             "children": [ {
@@ -477,7 +577,7 @@
          } ],
          "date_added": "13242893379423635",
          "date_last_used": "0",
-         "date_modified": "13323562824563178",
+         "date_modified": "13323817193379028",
          "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
          "id": "1",
          "name": "Bookmarks bar",
